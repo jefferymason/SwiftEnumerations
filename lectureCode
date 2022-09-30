@@ -1,0 +1,74 @@
+import SwiftUI
+import Foundation
+
+let weekday = 0
+let weekend = 1
+
+let Monday = weekday
+let Tuesday = weekday
+let Wednesday = weekday
+let Thursday = weekday
+let Friday = weekday
+
+let Saturday = weekend
+let Sunday = weekend
+
+if (weekday == Monday) {
+        print("Weekday")
+    } else
+if (weekday == Tuesday) {
+        print("Weekday")
+    } else
+if (weekday == Wednesday) {
+        print("Weekday")
+    } else
+if (weekday == Thursday) {
+        print("Weekday")
+    } else
+if (weekday == Friday) {
+        print("Weekday")
+    } else
+if (weekend == Saturday) {
+        print("Weekend")
+    } else
+if (weekend == Sunday) {
+        print("Weekend")
+    }
+
+weekend == Sunday
+weekday == Sunday
+            
+        
+    
+
+// Enumeration - Grouping together related values. Set of named values.
+
+
+enum Weekday {
+    case Monday
+    case Tuesday
+    case Wednesday
+    case Thursday
+    case Friday
+    case Saturday
+    case Sunday
+
+    func dayType() -> String {
+        switch self {
+        case .Sunday, .Saturday:
+            return  "Weekend"
+        default:
+            return "Weekday"
+        }
+     }
+}
+
+Weekday.Monday.dayType()
+
+Weekday.Sunday.dayType()
+
+
+// Switch Statement - Allows us to execute a block of code among many options.
+
+
+
